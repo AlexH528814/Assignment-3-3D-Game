@@ -26,11 +26,11 @@ public class Portal : MonoBehaviour
 
     // Components.
     public Renderer Renderer { get; private set; }
-    private new BoxCollider collider;
+    private new MeshCollider collider;
 
     private void Awake()
     {
-        collider = GetComponent<BoxCollider>();
+        collider = GetComponent<MeshCollider>();
         Renderer = GetComponent<Renderer>();
     }
 

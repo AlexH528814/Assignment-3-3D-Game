@@ -13,13 +13,7 @@ public class upRight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.transform.rotation.x == 180 || GameObject.transform.rotation.x == -180)
-        {
-            Invoke("ResetAngles", 0.5f);
-        }
-        
-
-        if (GameObject.transform.rotation.z == 0)
+        if (GameObject.transform.rotation.x == 0 && GameObject.transform.rotation.z == 0)
         {
             return;
         }
@@ -28,6 +22,9 @@ public class upRight : MonoBehaviour
         {
             Invoke("ResetAngles", 0.5f);
         }
+
+
+        
 
         
     }
