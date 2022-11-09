@@ -7,7 +7,7 @@ public class Portal : MonoBehaviour
     private Vector3 portalNormal;
     private Portal otherPortal;
     private GameObject player;
-    private Rigidbody rb;
+    public Rigidbody rb;
 
     public bool hasMoved;
 
@@ -17,7 +17,7 @@ public class Portal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        
         player = rb.gameObject;
 
         SetOtherPortal();
@@ -34,6 +34,8 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        rb = other.GetComponent<Rigidbody>();
+
         if (other.gameObject == player && disableTimer <= 0 && hasMoved && otherPortal.hasMoved)
         {
             otherPortal.MovePlayerToThisPortal();
@@ -61,6 +63,7 @@ public class Portal : MonoBehaviour
 
     public void MovePlayerToThisPortal()
     {
+       
         disableTimer = 1;
         Vector3 exitVelocity = portalNormal * rb.velocity.magnitude;
         rb.velocity = exitVelocity;

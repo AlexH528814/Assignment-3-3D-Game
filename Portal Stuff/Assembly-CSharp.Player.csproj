@@ -60,9 +60,7 @@
     <Compile Include="Assets\PortalScripts\PortalCamera.cs" />
     <Compile Include="Assets\PortalScripts\PortalGun.cs" />
     <Compile Include="Assets\PortalScripts\Portal.cs" />
-    <Compile Include="Assets\PortalScripts\PortalTeleporter.cs" />
     <Compile Include="Assets\Scripts\MoveCamera.cs" />
-    <Compile Include="Assets\PortalScripts\PortalTextureSetup.cs" />
     <Compile Include="Assets\Scripts\PickupController.cs" />
     <Compile Include="Assets\Scripts\upRight.cs" />
     <Compile Include="Assets\Scripts\PlayerCam.cs" />

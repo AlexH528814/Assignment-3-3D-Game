@@ -8,7 +8,7 @@ public class PortalGun : MonoBehaviour
 
     private Portal[] portals;
 
-    public LayerMask portalable;
+    public LayerMask layerMask;
 
 
     // Start is called before the first frame update
@@ -28,7 +28,7 @@ public class PortalGun : MonoBehaviour
         {
             Vector3 position = Camera.main.transform.position;
             RaycastHit raycastHit = new RaycastHit();
-            if (Physics.Linecast(position, position + Camera.main.transform.position * portalRange, out raycastHit, portalable))
+            if (Physics.Linecast(position, position + Camera.main.transform.position, out raycastHit, layerMask))
             {
                 int index = Input.GetMouseButtonDown(0) ? 0 : 1;
                 portals[index].MovePortal(raycastHit);
