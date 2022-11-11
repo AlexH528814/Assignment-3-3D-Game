@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Tilemaps;
+using UnityEngine.XR;
 
 /* 
  * Released under the creative commons attribution license.
@@ -12,6 +14,9 @@ public class Portal : MonoBehaviour
 {
     private PortalableObject po;
     private Rigidbody rb;
+
+    private Vector3 entervel;
+    private Vector3 exitvel;
 
     // the other portal that this will teleport to/render
     public GameObject linkedPortal;
@@ -33,15 +38,14 @@ public class Portal : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
 
+       
+
         if (portalActive)
         {
 
             rb = other.GetComponent<Rigidbody>();
 
-            Vector3 vector3 = new Vector3(rb.velocity.x, rb.velocity.y, rb.velocity.z);
-            Vector3 vector = new Vector3(0, 0,0);
-
-            rb.velocity = vector;
+             Vector3 exitVelocity = portalNormal * rb.velocity.magnitude;
 
             // make other portal not teleport us and our current one enabled
             linkedPortal.GetComponent<Portal>().Toggle();
@@ -60,9 +64,9 @@ public class Portal : MonoBehaviour
             other.transform.rotation = linkedPortal.transform.rotation;
 
 
+           
+            rb.velocity = (exitVelocity);
 
-            rb.velocity = vector3;
-            
 
 
 
@@ -80,6 +84,9 @@ public class Portal : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
+       
+
+
 
         // re-enable this portal for teleportation after we've exited
         // (teleporting into it)
