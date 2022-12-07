@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7dcdb72fd0edf0141a0fc748ceba5042, type: 3}
-  m_Name: Shardblade
+  m_Name: Default Shirt
   m_EditorClassIdentifier: 
-  name: Shardblade
+  name: Default Shirt
   icon: {fileID: 0}
-  isDefaultItem: 0
-  equipSlot: 4
+  isDefaultItem: 1
+  equipSlot: 1
+  mesh: {fileID: 2272058528180896085, guid: 8d828e03b51479946b0e9802f8ee65e0, type: 3}
+  coveredMeshRegions: 0200000001000000
   armourModifier: 0
-  damageModifier: 3
+  damageModifier: 0

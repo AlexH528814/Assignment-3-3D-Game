@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7dcdb72fd0edf0141a0fc748ceba5042, type: 3}
-  m_Name: Parshendi Carapace Helmet
+  m_Name: Platebody
   m_EditorClassIdentifier: 
-  name: Parshendi Carapace Helmet
-  icon: {fileID: 0}
+  name: Platebody
+  icon: {fileID: 21300000, guid: 93a1bb2d6ef74554ba528b352c346f07, type: 3}
   isDefaultItem: 0
-  equipSlot: 0
+  equipSlot: 1
+  mesh: {fileID: 2188115032214275660, guid: 8bc6e7ad07ebde44b8df23d639db96b8, type: 3}
+  coveredMeshRegions: 
   armourModifier: 0
   damageModifier: 0

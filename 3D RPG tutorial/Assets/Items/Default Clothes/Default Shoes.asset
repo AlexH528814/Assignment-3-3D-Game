@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7dcdb72fd0edf0141a0fc748ceba5042, type: 3}
-  m_Name: Shardplate Helmet
+  m_Name: Default Shoes
   m_EditorClassIdentifier: 
-  name: Shardplate Helmet
+  name: Default Shoes
   icon: {fileID: 0}
-  isDefaultItem: 0
-  equipSlot: 0
+  isDefaultItem: 1
+  equipSlot: 6
+  mesh: {fileID: 123476660027761825, guid: fc8e25a5b21758c4bbd8af676810dd7e, type: 3}
+  coveredMeshRegions: 
   armourModifier: 0
   damageModifier: 0
