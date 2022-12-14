@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcdb72fd0edf0141a0fc748ceba5042, type: 3}
+  m_Name: Helmet 3
+  m_EditorClassIdentifier: 
+  name: Platelegs
+  icon: {fileID: 21300000, guid: 700fcf277572de946a2d3af60f6b7651, type: 3}
+  isDefaultItem: 0
+  equipSlot: 3
+  mesh: {fileID: 1654203201646463864, guid: 54f37f69bd970d6478e145f7001e605d, type: 3}
+  coveredMeshRegions: 00000000
+  armourModifier: 2
+  damageModifier: 0
