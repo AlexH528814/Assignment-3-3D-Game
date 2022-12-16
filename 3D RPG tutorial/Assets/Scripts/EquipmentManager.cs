@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO.Enumeration;
-using UnityEditorInternal.Profiling.Memory.Experimental;
+
 using UnityEngine;
 
 public class EquipmentManager : MonoBehaviour
